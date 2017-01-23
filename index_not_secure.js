@@ -4,6 +4,8 @@ const fs = require('fs')
 const path = require('path')
 const http = require('http')
 
+const PORT = 9998
+
 app.get('/api/abc', (req, res) => {
 	res.json({
 		msg: 'what the fucking fuck'
@@ -11,6 +13,6 @@ app.get('/api/abc', (req, res) => {
 })
 
 http.createServer(app)
-	.listen(9999, () => {
-		console.info(9999);
+	.listen(PORT, () => {
+		console.info(PORT);
   });
