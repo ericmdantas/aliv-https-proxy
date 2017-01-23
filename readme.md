@@ -1,10 +1,10 @@
 Simple repo to get https://github.com/ericmdantas/aliv/issues/26 solved.
 
 ```shell
-$ npm run not-secure
+$ yarn
 ```
 
 
 ```shell
-$ npm run secure
+$ yarn servers
 ```
