@@ -8,7 +8,7 @@ const PORT = 9998
 
 app.get('/api/abc', (req, res) => {
 	res.json({
-		msg: 'what the fucking fuck'
+		msg: 'works, yay'
 	})
 })
 
