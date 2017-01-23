@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title>proxy_https</title>
+	</head>
+
+	<body>
+		<p id="info">!!!</p>
+
+		<script>
+			fetch('/api/abc')
+				.then(r => r.json())
+				.then(r => {
+					document.getElementById("info").innerText = r.msg;
+				})
+		</script>
+	</body>
+</html>

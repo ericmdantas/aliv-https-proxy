@@ -1,0 +1,24 @@
+{
+  "name": "aliv-https-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "not-secure": "concurrently \"node index_not_secure \" \"aliv --port 8888 --secure --pt https:\/\/127.0.0.1:9998\"",
+    "secure": "concurrently \"node index_secure \" \"aliv --port 8889 --pt http:\/\/127.0.0.1:9999\"\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericmdantas/aliv-https-proxy.git"
+  },
+  "author": "Eric Mendes Dantas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericmdantas/aliv-https-proxy/issues"
+  },
+  "homepage": "https://github.com/ericmdantas/aliv-https-proxy#readme",
+  "dependencies": {
+    "aliv": "^1.4.1",
+    "concurrently": "^3.1.0"
+  }
+}
