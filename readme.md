@@ -1,11 +1,10 @@
-```shell
-# works
+Simple repo to get https://github.com/ericmdantas/aliv/issues/26 solved.
 
+```shell
 $ npm run not-secure
 ```
 
-```shell
-# doesn't work - https://github.com/ericmdantas/aliv/issues/26
 
+```shell
 $ npm run secure
 ```
