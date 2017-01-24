@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "not-secure": "concurrently \"node index_not_secure \" \"aliv --port 8888 --pxt http:\/\/127.0.0.1:9998\"",
-    "secure": "concurrently \"node index_secure \" \"aliv --port 8889 --secure --pxt https:\/\/127.0.0.1:9999\"\"",
+    "not-secure": "concurrently \"node index_not_secure \" \"aliv --port 8888 --pxt http:\/\/127.0.0.1:9998 --pxw \/api\/* \"",
+    "secure": "concurrently \"node index_secure \" \"aliv --port 8889 --secure --pxt https:\/\/127.0.0.1:9999 --pxw \/api\/* \"",
     "servers": "concurrently \"yarn not-secure\" \"yarn secure\""
   },
   "repository": {

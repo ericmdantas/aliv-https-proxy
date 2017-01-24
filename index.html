@@ -10,13 +10,24 @@
 		</p>
 
 		<script>
-			document.title = /^(https:)/.test(location.protocol) ? 'proxy_https' : 'proxy_http';
+			;(function() {
+				let isHTTPS = /^(https:)/.test(location.protocol)
+				let url = '/api/';
 
-			fetch('/api/abc')
-				.then(r => r.json())
-				.then(r => {
-					document.getElementById("info").innerText = r.msg;
-				})
+				if (isHTTPS) {
+					document.title = 'proxy_https';
+					url += 'secure';
+				} else {
+					document.title = 'proxy_http';
+					url += 'not_secure';
+				}
+
+				fetch(url)
+					.then(r => r.json())
+					.then(r => {
+						document.getElementById("info").innerText = r.msg;
+					})
+			}());
 		</script>
 	</body>
 </html>

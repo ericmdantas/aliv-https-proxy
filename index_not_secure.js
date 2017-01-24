@@ -6,7 +6,7 @@ const http = require('http')
 
 const PORT = 9998
 
-app.get('/api/abc', (req, res) => {
+app.get('/api/not_secure', (req, res) => {
 	res.json({
 		msg: 'works, yay'
 	})

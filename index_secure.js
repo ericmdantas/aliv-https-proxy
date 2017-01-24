@@ -6,7 +6,7 @@ const https = require('https')
 
 const PORT = 9999
 
-app.get('/api/abc', (req, res) => {
+app.get('/api/secure', (req, res) => {
 	res.json({
 		msg: 'y u no work'
 	})
